@@ -7,8 +7,13 @@
 </head>
 
 <body>
+  <audio id="audio" src="think-fast-chucklenuts.mp3"></audio>
+  <h1 id="autoplaybp" style="opacity: 0;">Chrome autoplay bypass</h1>
+  <h2 id="link" style="text-decoration: underline; opacity: 0;" onclick="flashbang()">click to continue</h2>
   <script>
     function flashbang() {
+      document.getElementById("autoplaybp").style.opacity = 0;
+      document.getElementById("link").style.opacity = 0;
       var flashbangImg = document.createElement("img");
       flashbangImg.src = "flashbang.png";
       flashbangImg.width = 600;
@@ -34,9 +39,18 @@
         window.location.href = "index.html"
       }, 7000);
     }
-  </script>
 
-  <h1>Chrome autoplay bypass</h1>
-  <h2 style="text-decoration: underline;" onclick="flashbang()">click to continue</h2>
-  <audio id="audio" src="think-fast-chucklenuts.mp3"></audio>
+    var promise = document.querySelector('audio').play();
+    
+    if (promise !== undefined) {
+      promise.then(_ => {
+        flashbang();
+      }).catch(error => {
+        document.getElementById("autoplaybp").style.opacity = 1;
+        document.getElementById("link").style.opacity = 1;
+      });
+    }
+        </script>
+
+  
 </body>
