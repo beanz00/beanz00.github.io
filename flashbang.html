@@ -1,0 +1,42 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>think fast chucklenuts 💥</title>
+  <link rel="icon" href="🗿.ico" type="image/x-icon" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script>
+    function flashbang() {
+      var flashbangImg = document.createElement("img");
+      flashbangImg.src = "flashbang.png";
+      flashbangImg.width = 600;
+      flashbangImg.height = 600;
+      flashbangImg.style.display = "block";
+      flashbangImg.style.margin = "0 auto";
+      document.body.appendChild(flashbangImg);
+      document.documentElement.style.backgroundColor = "#000000";
+      var audio = document.getElementById("audio");
+      audio.play();
+      setTimeout(() => {
+        document.documentElement.style.backgroundColor = "#ffffff";
+        var images = document.querySelectorAll('img');
+        images.forEach(function(img) {
+          img.remove();
+        });
+        var textElements = document.querySelectorAll('body *');
+        textElements.forEach(function(element) {
+         element.innerHTML = '';
+        });
+      }, 1500);
+      setTimeout(() => {
+        window.location.href = "index.html"
+      }, 7000);
+    }
+  </script>
+
+  <h1>Chrome autoplay bypass</h1>
+  <h2 style="text-decoration: underline;" onclick="flashbang()">click to continue</h2>
+  <audio id="audio" src="think-fast-chucklenuts.mp3"></audio>
+</body>

@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>gentleman 🐟🎩</title>
+  <link rel="icon" href="🗿.ico" type="image/x-icon" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <audio id="audio" src="funkytown.mp3"></audio>
+  <button id="unmuteButton" style="opacity: 0; position: fixed;">lmao chrome user<br><br>click to play audio</button>
+  <a href="index.html"><img src="gentleman.gif" class="center" style="width: 100%;"></a>
+  
+    <script>
+    var promise = document.querySelector('audio').play();
+
+if (promise !== undefined) {
+  promise.then(_ => {
+    audio.play();
+  }).catch(error => {
+    document.getElementById("unmuteButton").style.opacity = 1;
+    unmuteButton.addEventListener('click', function() {
+      audio.play();
+      document.getElementById("unmuteButton").style.opacity = 0;
+  });
+  });
+}
+    </script>
+</body>
