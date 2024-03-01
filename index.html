@@ -10,14 +10,13 @@
 </head>
 
 <body text="white" background-color="#b0b0b0">
-  
+  <audio id="harhar" src="jumpscare.mp3"></audio>
   <h2><span style="color: blue;">text but <a class="link" href="secret.html"><span style="font-style: italic; color: blue;">blue</span></a></span></h2>
 
   <p><span style="color:#c67693">he<span 
 style="color:#13b549">he<span style="color:#3f67de">he<span style="color:#da5237">h<a class="link" href="flashbang.html"><span style="color:#ef8b0b">a</span></a></span></span></span></span></p>
   <script src="script.js"></script>
   <!--"🗿" - sun tsu-->
-  <p>
     <a href="rember.html"> <img src="heheheha.gif" height="200" width="200"> </a>
     <hr>
         <script>
@@ -25,6 +24,27 @@ style="color:#13b549">he<span style="color:#3f67de">he<span style="color:#da5237
            var audio = document.getElementById("audio");
            audio.play();
                      }
+      function jumpscare(){
+        document.getElementById("funnylink").style.opacity = 0;
+        let harhar = document.createElement('img');
+        harhar.src = "jumpscare.gif"
+        harhar.width = 1500;
+        harhar.height = 1500;
+        harhar.style.position = "fixed";
+        harhar.style.top = 0;
+        harhar.style.right = 0;
+        harhar.style.textAlign = "center";
+        document.body.appendChild(harhar);
+        var jumpscareaud = document.getElementById("harhar");
+        jumpscareaud.play();
+        setTimeout(() => {
+          jumpscareaud.pause();
+          harhar.style.opacity = 0;
+          harhar.width = 1;
+          harhar.height = 1;
+          document.getElementById("funnylink").style.opacity = 0;
+        }, 840);
+      }
        </script>
 
     <img src="heavy.gif" value="PLAY"  onclick="play()">
@@ -33,4 +53,5 @@ style="color:#13b549">he<span style="color:#3f67de">he<span style="color:#da5237
     <br>
     <br>
     <a href="gentleman.html" style="font-size: 30px; text-decoration: none;">🎩<br>🐟</a>
-  </p>
+    <p onclick="jumpscare()" id="funnylink" style="position: absolute; right: 700px; top: 450px; color: blue; text-decoration: underline;">funny link</p>
+      </body>
