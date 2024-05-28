@@ -30,19 +30,14 @@ style="color:#13b549">he<span style="color:#3f67de">he<span style="color:#da5237
         harhar.src = "jumpscare.gif"
         harhar.width = 1500;
         harhar.height = 1500;
-        harhar.style.position = "fixed";
-        harhar.style.top = 0;
-        harhar.style.right = 0;
-        harhar.style.textAlign = "center";
+        harhar.classList.add('harharcss');
         document.body.appendChild(harhar);
         var jumpscareaud = document.getElementById("harhar");
         jumpscareaud.play();
         setTimeout(() => {
           jumpscareaud.pause();
-          harhar.style.opacity = 0;
-          harhar.width = 1;
-          harhar.height = 1;
-          document.getElementById("funnylink").style.opacity = 0;
+          harhar.classList.add('father');
+          document.getElementById("funnylink").classList.add('father');
         }, 840);
       }
        </script>

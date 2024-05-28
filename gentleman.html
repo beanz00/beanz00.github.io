@@ -8,7 +8,7 @@
 
 <body>
   <audio id="audio" src="funkytown.mp3"></audio>
-  <button id="unmuteButton" style="opacity: 0; position: fixed;">lmao chrome user<br><br>click to play audio</button>
+  <button id="unmuteButton" style="opacity: 0; position: fixed;">autoplay audio blocked<br><br>click to play audio</button>
   <a href="index.html"><img src="gentleman.gif" class="center" style="width: 100%;"></a>
   
     <script>
@@ -21,7 +21,7 @@ if (promise !== undefined) {
     document.getElementById("unmuteButton").style.opacity = 1;
     unmuteButton.addEventListener('click', function() {
       audio.play();
-      document.getElementById("unmuteButton").style.opacity = 0;
+      document.getElementById("unmuteButton").classList.add('father');
   });
   });
 }

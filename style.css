@@ -17,3 +17,19 @@ html {
 .top {
   text-align: center;
 }
+
+.harharcss {
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+
+.father {
+  display: none;
+}
+
+.flashbangcss {
+  display: block;
+  margin: 0 auto;
+}

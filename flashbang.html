@@ -8,18 +8,17 @@
 
 <body>
   <audio id="audio" src="think-fast-chucklenuts.mp3"></audio>
-  <h1 id="autoplaybp" style="opacity: 0;">Chrome autoplay bypass</h1>
+  <h1 id="autoplaybp" style="opacity: 0;">autoplay blocked</h1>
   <h2 id="link" style="text-decoration: underline; opacity: 0;" onclick="flashbang()">click to continue</h2>
   <script>
     function flashbang() {
-      document.getElementById("autoplaybp").style.opacity = 0;
-      document.getElementById("link").style.opacity = 0;
+      document.getElementById("autoplaybp").classList.add('father');
+      document.getElementById("link").classList.add('father');
       var flashbangImg = document.createElement("img");
       flashbangImg.src = "flashbang.png";
       flashbangImg.width = 600;
       flashbangImg.height = 600;
-      flashbangImg.style.display = "block";
-      flashbangImg.style.margin = "0 auto";
+      flashbangImg.classList.add('flashbangcss');
       document.body.appendChild(flashbangImg);
       document.documentElement.style.backgroundColor = "#000000";
       var audio = document.getElementById("audio");
