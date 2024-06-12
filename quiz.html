@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>quiz</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <audio id="harhar" src="jumpscare.mp3"></audio>
+    <form id="q1" class="center">
+        <p>my honest reaction</p>
+        <label for="forgor">i forgor 💀</label>
+        <input type="radio" name="question1" id="forgor" value="1">
+        <br>
+        <label for="yes">yes</label>
+        <input type="radio" name="question1" id="yes" value="0">
+        <br>
+        <button type="button" onclick="checkAnswerq1()">🎉</button>
+    </form>
+    <div id="q2" class="father center">
+        <p>think fast chucklenuts</p>
+        <select id="question2" onchange="checkAnswerq2()">
+            <option value="1">yes</option>
+            <option value="2">💥</option>
+            <option value="3">😁</option>
+            <option value="4">the whar?</option>
+        </select>
+    </div>
+    <div id="q3" class="father center">
+        the goober 🐟
+        <input type="text" id="question3">
+        <br><br>
+        <button type="button" onclick="checkAnswerq3()">the yes</button>
+    </div>
+    <div id="fail" class="father center">
+        <h1>womp womp</h1>
+        <br><br><br>
+        <a href="quiz.html">retry</a>
+    </div>
+    <script src="script.js"></script>
+</body>

@@ -4,10 +4,7 @@ html {
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  text-align: center;
 }
 
 .link {
@@ -32,4 +29,66 @@ html {
 .flashbangcss {
   display: block;
   margin: 0 auto;
+}
+
+#fail h1 {
+  color: darkred;
+  font-size: 150px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#fail {
+  padding-top: 20px;
+}
+
+#fail a {
+  font-size: 30px;
+  color: red;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.orange {
+  color: rgb(255, 165, 0);
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.blue {
+  color: #0000ff;
+}
+
+.purple {
+  color: purple;
+}
+
+#yippee h1 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: lightgreen;
+  padding: 0;
+}
+
+.size {
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+}
+
+.confettisize {
+  text-align: center;
+  height: 100%;
+  width: auto;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  margin: 0 100px;
 }
